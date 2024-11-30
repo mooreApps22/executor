@@ -55,8 +55,8 @@ void	redirect_output(int old_fd);
 pid_t	forker(t_data *d, t_cmd *current);
 void	new_process(t_data *d, t_cmd *current);
 
-int		open_heredoc(t_cmd *cur, int output_fd);
-void	output_heredoc(int fd);
+int	open_heredoc(t_cmd *cur);
+void	output_heredoc(int fd, int output_fd);
 
 int		open_fd(char *arg);
 int		append_fd(char *arg);
